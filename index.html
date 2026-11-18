@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Spikeys CCs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app" class="mobile-optimized-container">
+        <header class="app-header">
+            <h1 class="rainbow-watermark">Spikeys CCs</h1>
+            <nav class="nav-tabs">
+                <button class="tab-btn active" data-tab="shop">Shop</button>
+                <button class="tab-btn" data-tab="casino">Casino Suite</button>
+                <button class="tab-btn" data-tab="investments">Investments</button>
+                <button class="tab-btn" data-tab="chat">Chat Room</button>
+            </nav>
+        </header>
+        
+        <main class="content-viewport">
+            <div id="checkout-modal" class="modal hidden">
+                <div class="modal-content">
+                    <h3>Secure Checkout & Deposit</h3>
+                    <div class="deposit-integration-box">
+                        <label for="checkout-deposit-amount">Deposit Funds to Complete Purchase:</label>
+                        <input type="number" id="checkout-deposit-amount" min="1" step="0.01" placeholder="0.00">
+                    </div>
+                    <button id="confirm-secure-checkout" class="primary-btn">Complete Checkout</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
